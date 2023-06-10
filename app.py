@@ -35,7 +35,7 @@ def predict_yield():
         predicted_yield = output_data[0][0]
 
         # Return the predicted result as a JSON response
-        response = {'predicted_yield': predicted_yield}
+        response = {'predicted_yield': predicted_yield.item()}
 
         return jsonify(response)
 
