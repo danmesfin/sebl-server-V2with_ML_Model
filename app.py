@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # Load the TFLite model
 def load_model():
-    interpreter = tf.lite.Interpreter(model_path='/assets/yield_prediction_model.tflite')
+    interpreter = tf.lite.Interpreter(model_path='assets/yield_prediction_model.tflite')
     interpreter.allocate_tensors()
     return interpreter
 
